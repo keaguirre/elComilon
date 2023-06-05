@@ -14,7 +14,7 @@ Panel de administración: Permite a los usuarios administradores gestionar los p
 
 # Vista previa
 
-![catalogo restaurant](https://s11.gifyu.com/images/Su4Q4.gif)
+![catalogo restaurant](/Documentos/preview.gif)
 
 ## Tecnologías utilizadas
 
