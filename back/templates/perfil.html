@@ -1,0 +1,279 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>El comilón delivery</title>
+	<!-- Font Awesome icons -->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static '../static/Css/styles.css' %}" rel="stylesheet" />
+        <!-- css Caja -->
+        <link href="{% static '../static/Css/stylesForms.css' %}" rel="stylesheet" />
+    </head>
+    <body class="bg-light" id="page-top">
+      <style type="text/css">
+        body {
+          margin-top: 20px;
+          background: #f8f8f8
+        }
+      </style>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top" id="sideNav">
+            <!--Spacing ul-top? -->
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none bg-secondary"></span>
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> 
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#inicio">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#picoteo">Picoteo</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#papasFritas">Papas Fritas</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#platosNuevos">Platos nuevos</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#jugos">Jugos</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#bebidas">Bebidas</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#aperitivos">Aperitivos</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#especialidades">Especialidades de la casa</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#licores">Licores</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% url 'backhome'%}#encuentranos">Encuentranos!</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse mb-4">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="perfil">Cuenta</a></li>
+                  <li class="nav-item"><a class="nav-link js-scroll-trigger" href="carro">Carrito</a></li>
+                </ul>    
+            </div>
+        </nav>
+    <!--page content-->
+    <br><br>
+    <div class="collapse navbar-collapse mb-4">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.html">Inicia Sesión</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="perfil.html">Perfil</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="carro.html">Carrito</a></li>
+      </ul>
+    </div>
+  </nav>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container">
+    <div class="row flex-lg-nowrap">
+      <div class="col-12 col-lg-auto mb-3" style="width: 200px;">
+        <div class="bg-danger card p-3 border-danger">
+          <div class="e-navlist e-navlist--active-bg">
+            <ul class="nav">
+              <li class="nav-item"><a class="text-light nav-link px-2 active" href="perfil"><i
+                class="fa fa-fw fa-bar-chart mr-1"></i><span>Perfil</span></a></li>
+              <li class="nav-item"><a class="text-light nav-link px-2" href="historialCompras.html"
+                target="__blank"><i class="fa fa-fw fa-th mr-1"></i><span>Historial</span></a></li>
+
+              <li class="nav-item"><a class="text-light nav-link px-2 active" href="convenios"><i
+                class="fa fa-fw fa-bar-chart mr-1"></i><span>Convenios</span></a></li>
+                  
+              <li class="nav-item"><a class="text-light nav-link px-2"
+                  href="administracion" target="__blank"><i
+                    class="fa fa-fw fa-cog mr-1"></i><span>Analíticas</span></a></li>
+              <li class="nav-item"><a class="text-light nav-link px-2"
+                href="#" target="__blank"><i class="fa fa-fw fa-th mr-1"></i><span>Actualizar oferta de platos</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col mb-3 ">
+            <div class="bg-danger text-light card border-danger">
+              <div class="card-body">
+                <div class="e-profile">
+                  <ul class="nav nav-tabs">
+                    <li class="nav-item"><a href="" class="active nav-link">Menus</a></li>
+                  </ul>
+                  <div class="tab-content pt-3">
+                    <div class="tab-pane active">
+                      <form class="form" novalidate="">
+                        <div class="row">
+                          <div class="col">
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nombre completo</label>
+                                  <input class="form-control" type="text" name="name" placeholder="Su nombre"
+                                    value="">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nombre de usuario</label>
+                                  <input class="form-control" type="text" name="username" placeholder="Su nombre"
+                                    value="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Correo electrónico</label>
+                                  <input class="form-control" type="text" placeholder="usuario@ejemplo.com">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Dirección de entrega</label>
+                                  <input class="form-control" type="text" placeholder="Av falsa 123">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 col-sm-6 mb-3">
+                            <div class="mb-2"><b>Cambiar contraseña</b></div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Contraseña</label>
+                                  <input class="form-control" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Nueva contraseña</label>
+                                  <input class="form-control" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <div class="form-group">
+                                  <label>Confirmar <span class="d-none d-xl-inline">contraseña</span></label>
+                                  <input class="form-control" type="password" placeholder="••••••">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-5 offset-sm-1 mb-3">
+                            <div class="mb-2"><b>Sigamos en contacto</b></div>
+                            <div class="row">
+                              <div class="col">
+                                <label>Notificaciones al correo</label>
+                                <div class="custom-controls-stacked px-2">
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-blog"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-blog">Publicaciones online</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-news"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-news">Boletín informativo</label>
+                                  </div>
+                                  <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="notifications-offers"
+                                      checked="">
+                                    <label class="custom-control-label" for="notifications-offers">Ofertas</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col d-flex justify-content-end">
+                            <button class="btn btn-light" type="submit">Actualizar informacion</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-3">
+            <div class="card mb-3 border-danger">
+              <div class="card-body">
+                <div class="px-xl-3">
+                  <form action="/cerrar_sesion" method="post" name="logoutButton"><!--form logout-->
+                    {% csrf_token %}
+                    <button class="btn btn-block btn-secondary" type="submit">
+                      <i class="fa fa-sign-out"></i>
+                      <span id="cierreSesion">Cerrar sesión</span>
+                    </button>
+                  </form>  
+                </div>
+              </div>
+            </div>
+            <div class="card border-danger">
+              <div class="card-body">
+                <h6 class="card-title font-weight-bold">Soporte</h6>
+                <button id="liveToastBtn" type="button" class="btn btn-success">Contáctanos</button><br><br>
+                <form action="/eliminarUsuario" method="post" name="del_Account"><!--form account del-->
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-danger">Eliminar cuenta</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--chat contactanos-->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-danger text-light">
+        <strong class="me-auto">El comilón</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        <form action="#" id="contactanosForm">
+          {% csrf_token %}
+          <ul class="list-unstyled">
+            <li>Ingrese su nombre: </li><!--Nombre-->
+            <li><input type="text" class="form-control" id="contactanosName"></li>
+            <li>Ingrese su correo: </li><!--correo-->
+            <li><input type="email" class="form-control" id="contactanosEmail"></li>
+            <li>Ingrese su mensaje: </li><!--msj-->
+            <li><input type="text" class="form-control" id="contactanosMsj"></li>
+            <li><br><button class="btn btn-block btn-success" type="submit">Enviar!</button></li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- <script>//Esconder y desplegar cambio de bloques
+  function displayToast(){
+    //document.getElementById('chatContactanos').style.display = 'none';
+    //event.preventDefault();//Impide que se envie el formulario
+    document.getElementById('chatContactanos').style.display = 'block';
+  }
+</script> -->
+<!--JS bundle-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+  var toastTrigger = document.getElementById('liveToastBtn')
+  var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+      })
+    }
+</script>
+</body>
+
+</html>

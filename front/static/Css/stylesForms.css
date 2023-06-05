@@ -1,0 +1,65 @@
+	/*form de registro 1 y 2*/
+	.formRegistro1 { 
+		width: 450px;
+		margin: 5% auto;
+	  }
+	
+		/*Fondo para el body para la seccion de registro*/
+	  .bodyRegistro1 { 
+		background: white;
+		font-family: 'Lato', sans-serif;
+		color: #f8f9fa;
+	
+	  }
+	
+		/*caja del p titulo del form*/
+	  .headerRegistro1 {
+		font-size: 35px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	  }
+	  
+		/*texto bajo titulo del form*/
+	  .descriptionRegistro1 {
+		font-size: 14px;
+		letter-spacing: 1px;
+		line-height: 1.3em;
+		margin: -2px 0 45px;
+	  }
+	  
+		/*div que contiene caja de input ambas*/
+	  .inputRegistro1 {
+		align-items: center;
+	  }
+	  
+	  /*Configuracion de estilos de cajas de dentro del form // incluye el submit*/
+	  .buttonRegistro1 {
+		height: 44px;
+		
+	  }
+	  /*Configuracion de estilos de ambas cajas de input*/
+	  .textbox {
+		width: 75%;
+		background: #fdfcfb;
+		font-family: inherit;
+		color: #737373;
+		letter-spacing: 1px;
+		text-indent: 5%;
+		border-style: solid;
+		border-radius: 5px;
+	  }
+	  
+	  .boxRadius{
+		border-radius: 1%;
+	  }
+	/* setea el border width para todas las cajas de mail(login, registro1) */
+	  .emailbox {
+		border-width: 5px;
+	  }
+	  #password{
+		border: none;
+	  }
+	  .noSubrayado{
+		text-decoration: none;
+	  }
+	  
